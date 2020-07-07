@@ -11,7 +11,7 @@ type QuestionSet struct {
 	ID             string     `json:"id"`
 	CreatedAt      int        `json:"created_at"`
 	UpdatedAt      int        `json:"updated_at"`
-	Livemode       bool       `json:"livemode"`
+	Livemode       string     `json:"livemode"`
 	VerificationID string     `json:"verification_id"`
 	Score          float64    `json:"score"`
 	Expired        bool       `json:"expired"`

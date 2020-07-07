@@ -1,3 +1,3 @@
-module github.com/ahmedaabouzied/blockscore-go
-
 go 1.12
+
+module github.com/digitalmint/blockscore-go
