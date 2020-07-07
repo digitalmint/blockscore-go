@@ -12,7 +12,7 @@ type Person struct {
 	CreatedAt          int64         `json:"created_at"`
 	UpdatedAt          int64         `json:"updated_at"`
 	Status             string        `json:"status"`
-	Livemode           string        `json:"livemode"`
+	Livemode           bool          `json:"livemode"`
 	PhoneNumber        string        `json:"phone_number"`
 	IPAddress          string        `json:"ip_address"`
 	BirthDay           int64         `json:"birth_day"`

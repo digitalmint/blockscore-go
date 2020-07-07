@@ -11,7 +11,7 @@ type Candidate struct {
 	ID                 string `json:"id"`
 	CreatedAt          int64  `json:"created_at"`
 	UpdatedAt          int64  `json:"updated_at"`
-	Livemode           string `json:"livemode"`
+	Livemode           bool   `json:"livemode"`
 	Note               string `json:"note"`
 	Ssn                string `json:"ssn"`
 	Passport           string `json:"passport"`
