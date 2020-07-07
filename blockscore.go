@@ -27,7 +27,7 @@ var apiVersion = 4
 
 // SetKeyEnv Sets the BlockScore API key to use for authenticating API requests.
 func SetKeyEnv() (err error) {
-	apiKey = os.Getenv("BLOCKSCORE_API_KEY")
+	apiKey = strings.TrimSpace(os.Getenv("BLOCKSCORE_API_KEY"))
 	if apiKey == "" {
 		err = errors.New("BLOCKSCORE_API_KEY not found in environment")
 	}
