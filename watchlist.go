@@ -38,6 +38,12 @@ type WatchlistParams struct {
 	// only search for people or entities on watchlists respectively.
 	// Optional param.
 	MatchType string `json:"match_type"`
+
+	// Any watchlist matches with confidence less than this threshold will be
+	// filtered out of the results. Used for tweaking watchlist hit sensitivity.
+	// Expects a float between 0.0 and 1.0 where 1.0 is exact matches only and 
+	// 0.0 is lenient matching. The default value is 0.7.
+	SimilarityThreshold float64 `json:"similarity_threshold"`
 }
 
 // WatchlistClient wraps watchlist related methods
